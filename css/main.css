@@ -167,12 +167,12 @@ h5 {
 
 .about2 {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .about4 {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .aboutTextEven {
