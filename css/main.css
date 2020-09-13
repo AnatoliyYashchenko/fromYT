@@ -19,8 +19,9 @@ header{
     margin: 0 auto;
 }
 
-.heading{
-    margin: 0 auto;
+.heading {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -67,7 +68,7 @@ h1 {
     margin: 15px;
 }
 
-.button{
+.button {
     background: #fed136;
     color: #484543;
     border-radius: 3px;
@@ -87,7 +88,6 @@ h1 {
 
 .title h2 {
     font-size: 40px;
-    font-width: bold;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -109,6 +109,7 @@ h1 {
 #services {
     padding-bottom: 120px;
 }
+
 .servicesItem {
     width: 33%;
     margin-right: 40px;
@@ -144,6 +145,7 @@ h1 {
 .title {
     margin-bottom: 80px;
 }
+
 h4 {
     text-transform: uppercase;
     font-size: 25px;
@@ -211,7 +213,6 @@ footer p {
     .container {
         max-width: 750px;
     }
-
 
     .titlesFirst {
         font-size: 32px;
@@ -325,7 +326,6 @@ footer p {
         text-align: right;
     }
 
-
 @media (max-width:576px) {
     .container {
         max-width: none;
@@ -343,6 +343,7 @@ footer p {
     nav {
         margin: 0 auto;
     }
+
     .menu li {
         margin-right: 10px;
         align-items: center;
@@ -370,11 +371,13 @@ footer p {
         margin: 0 auto;
         text-align: center;
     }
+
     .works {
         flex-direction: column;
         width: max-content;
         margin: 0 auto;
     }
+
     .about1 {
         flex-direction: column;
     }
@@ -396,7 +399,6 @@ footer p {
         width: 100%;
         margin-top: 5%;
     }
-
 
     .aboutTextOdd {
         width: 100%;
