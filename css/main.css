@@ -15,18 +15,16 @@ header{
 }
 
 .container {
-    width: 930px;
+    max-width: 930px;
     margin: 0 auto;
 }
 
 .heading{
-    display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .logo {
     margin-top: 41px;
-    float: left;
 }
 
 nav {
@@ -112,8 +110,13 @@ h1 {
     padding-bottom: 120px;
 }
 .servicesItem {
-    width: 270px;
+    width: 33%;
+    margin-right: 40px;
     text-align: center;
+}
+
+.servicesItem:last-child {
+    margin-right: 0;
 }
 
 .servicesItem h3 {
@@ -155,40 +158,41 @@ h5 {
 
 .about1 {
     display: flex;
-    justify-content: left;
-    margin-bottom: 50px;
+    width: 66.67%;
 }
 
 .about3 {
     display: flex;
-    justify-content: left;
-    margin: 50px auto;
+    width: 66.67%;
+    margin-top: 5%;
 }
 
 .about2 {
     display: flex;
-    justify-content: flex-end;
+    width: 66.67%;
+    margin-top: 5%;
+    margin-left: 33.33%;
 }
 
 .about4 {
     display: flex;
-    justify-content: flex-end;
+    width: 66.67%;
+    margin-top: 5%;
+    margin-left: 33.33%;
 }
 
 .aboutTextEven {
-    width: 330px;
+    width: 50%;
     text-align: right;
 }
 
 .aboutTextOdd {
-    width: 330px;
+    width: 50%;
     text-align: left;
 }
 
 .about img {
-    width: 180px;
-    height: 180px;
-    margin: auto 45px;
+    margin: 0 10%;
 }
 
 footer p {
@@ -197,3 +201,217 @@ footer p {
     font-size: 18px;
 }
 
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+
+
+    .titlesFirst {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .button {
+        width: 220px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .title h2 {
+        font-size: 32px;
+    }
+
+    .about1 {
+        display: flex;
+        width: 80%;
+    }
+
+    .about3 {
+        display: flex;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .about2 {
+        display: flex;
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+
+    .about4 {
+        display: flex;
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+
+    .about img {
+        margin: 0 5%;
+    }
+}
+@media (max-width:767px) {
+    .container {
+        max-width: 550px;
+    }
+
+    .menu li {
+        margin-right: 25px;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    .titlesFirst {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .button {
+        width: 160px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .title h2 {
+        font-size: 32px;
+    }
+
+    .about1 {
+        width: 100%;
+    }
+
+    .about3 {
+        width: 100%;
+    }
+
+    .about2 {
+        display: flex;
+        width: 100%;
+        margin-top: 5%;
+        direction: rtl;
+        margin-left: 0;
+    }
+
+    .about4 {
+        display: flex;
+        width: 100%;
+        margin-top: 5%;
+        direction: rtl;
+        margin-left: 0;
+    }
+
+    .aboutTextOdd {
+        width: 60%;
+        text-align: right;
+    }
+
+    .aboutTextEven {
+        width: 60%;
+        text-align: right;
+    }
+
+
+@media (max-width:576px) {
+    .container {
+        max-width: none;
+    }
+
+    .heading {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 10% auto;
+    }
+}
+
+    nav {
+        margin: 0 auto;
+    }
+    .menu li {
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    .titlesFirst {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+
+    .services {
+        flex-direction: column;
+    }
+
+    .servicesItem {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .works {
+        flex-direction: column;
+        width: max-content;
+        margin: 0 auto;
+    }
+    .about1 {
+        flex-direction: column;
+    }
+
+    .about3 {
+        flex-direction: column;
+    }
+
+    .about2 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .about4 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+
+    .aboutTextOdd {
+        width: 100%;
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    .aboutTextEven {
+        width: 100%;
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    .about img {
+        margin: 0 auto;
+    }
+
+}
